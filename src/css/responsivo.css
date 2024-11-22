@@ -10,7 +10,7 @@
         gap: 30px;
     }
 
-    .home informacoes {
+    .home .informacoes {
         max-width: 100%;
         text-align: center;
         align-items: center;
@@ -22,7 +22,7 @@
 }
 
 @media(max-width: 425px) {
-    .home .informacoes h1 {
+    .home .informacoes h1, .projetos .titulo {
         font-size: 30px;
     }
 
