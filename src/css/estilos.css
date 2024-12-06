@@ -38,8 +38,6 @@ body {
 
 }
 
-
-
 .cabecalho .menu li a {
     font-size: 20px;
     text-transform: capitalize;
@@ -185,7 +183,7 @@ body {
     background-color: #000;
 }
 
-.projetos .btn-mostrar-projetos {
+.projetos .btn-mostrar-projetos, .informacoes .btn-curriculo {
     background: none;
     border: 1px solid #fff;
     border-radius: 15px;
@@ -201,7 +199,7 @@ body {
     cursor: pointer;
 }
 
-.projetos .btn-mostrar-projetos:hover {
+.projetos .btn-mostrar-projetos:hover, .informacoes .btn-curriculo:hover {
     background-color: #a10c0c;
     transition: 0.3s;
 }
