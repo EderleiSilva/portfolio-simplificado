@@ -3,154 +3,331 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-        content="width=device-width, initial-scale=1.0">
-    <title>Ederlei Pereira dos Santos Silva - Desenvolvedor Frontend</title>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ederlei Pereira dos Santos Silva - Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-  />
-    <link rel="preconnect" 
-        href="https://fonts.googleapis.com">
-    <link rel="preconnect" 
-        href="https://fonts.gstatic.com" 
-        crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" 
-            href="./src/css/reset.css">
-        <link rel="stylesheet" 
-            href="./src/css/secoes/home.css">
-        <link rel="stylesheet" 
-            href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/font-awesome.css">
+
+    <link rel="stylesheet" href="./src/css/globais.css">
+    <link rel="stylesheet" href="./src/css/variaveis.css">
+    <link rel="stylesheet" href="./src/css/secoes/header.css">
+    <link rel="stylesheet" href="./src/css/secoes/home.css">
+    <link rel="stylesheet" href="./src/css/secoes/sobre.css">
+    <link rel="stylesheet" href="./src/css/secoes/habilidades.css">
+    <link rel="stylesheet" href="./src/css/secoes/certificados-e-projetos.css">
+    <link rel="stylesheet" href="./src/css/secoes/footer.css">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <a href="#">
-            <h1 class="logo">ES</h1>
-        </a>
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between alinhar-itens-no-centro">
+                <a href="#">
+                    <h1 class="logo">ES</h1>
+                </a>
+                <nav>
+                    <input id="menu-hamburguer" type="checkbox" />
 
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#projetos">Meus Projetos</a>
-                </li>
-            </ul>
-        </nav>
+                    <label for="menu-hamburguer">
+                        <div class="menu">
+                            <span class="hamburguer"></span>
+                        </div>
+                    </label>
+
+                    <ul>
+                        <li><a href="#sobre-mim">Sobre mim</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#certificados">Certificados</a></li>
+                        <li><a href="#projetos">Meus Projetos</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+
     <section class="home">
-        <div class="informacoes">
-            <h1>Olá Sou Ederlei Silva</h1>
-            <p>Um desenvolvedor frontend em formação apaixonado por tecnologia.</p>
-            <p>Estou em transição de carreira, sempre buscando aprender mais me desafiando com novos projetos e buscando feedback na comunidade de programação, além de compartilhar meus conhecimentos. 😁</p>
-            <p>Ah, também sou fã de jogos, filmes, séries e animes. 💜</p>
+        <div class="container">
+            <div class="row full-screen alinhar-itens-no-centro">
+                <div class="texto-home">
+                    <p>Olá 🖖,</p>
+                    <h1>Sou o Ederlei Silva</h1>
+                    <p>Desenvolvedor Full Stack</p>
 
-            <ul class="redes-sociais">
-                <li>
-                    <a href="https://www.linkedin.com/in/ederlei-silva-046380127/" 
-                    title="Ir para o linkedin"
-                    target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
+                    <div class="redes-sociais">
+                        <a href="https://www.linkedin.com/in/ederlei-silva-046380127/" class="outer-shadow"
+                            title="Ir para o linkedin" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
 
-                <li>
-                    <a href="https://wa.me/5531983715800" 
-                        title="Enviar Mensagem no WhatsApp" 
-                        target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
+                        <a href="https://wa.me/5531983715800" class="outer-shadow" title="Enviar Mensagem no WhatsApp"
+                            target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
 
-                <li>
-                    <a href="https://github.com/EderleiSilva" 
-                        title="Ir para o GitHub" 
-                        target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="container-foto">
-            <div class="foto sombra-interna">
-                <img src="./src/assets/imagens/perfil/foto-perfil-sem-fundo.png" alt="Foto Portifólio do Ederlei">
+                        <a href="https://github.com/EderleiSilva" class="outer-shadow" title="Ir para o GitHub"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="img-home">
+                    <div class="img-box inner-shadow shadow-internal">
+                        <img class="outer-shadow" src="./src/assets/imagens/perfil/foto-perfil-sem-fundo.png"
+                            alt="Foto Portifólio do Ederlei">
+                    </div>
+                </div>
             </div>
         </div>
-
-        
     </section>
 
-    <div class="btn">
-        <button class="btn-curriculo" id="btnDownload">Veja meu Curriculo</button>
-    </div>
-
-    <section class="projetos" id="projetos">
-        <h2 class="titulo">Meus Projetos</h2>
-
-        <div class="container-projetos">
-            <div class="projeto ativo">
-                <a href="https://github.com/EderleiSilva/Projeto-Huddle" target="_blank">
-                    <img src="./src/assets/imagens/projetos/huddle.gif" alt="Gif do Projeto Huddle">
-                    <h3>Huddle</h3>
-
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML e CSS</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-
-
-                </a>
+    <section class="sobre-mim section" id="sobre-mim">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Sobre mim</h2>
+                </div>
             </div>
-
-            <div class="projeto ativo">
-                <a href="https://github.com/EderleiSilva/projeto-grid" target="_blank">
-                    <img src="./src/assets/imagens/projetos/bento-grid-main.gif" alt="Gif do Projeto Grid">
-                    <h3>Bento Grid</h3>
-
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML e CSS</p>
-                        <p>🔗 Ver no GitHub Pages</p>
+            <div class="row">
+                <div class="imagem-sobre-mim">
+                    <div class="img-box inner-shadow">
+                        <img src="./src/assets/imagens/perfil/foto-perfil-sem-fundo.png" alt="foto sobre mim"
+                            class="outer-shadow" />
                     </div>
-                </a>
-            </div>
+                </div>
+                <div class="informacoes-sobre-mim">
+                    <p>
+                        <strong>Olá! Me chamo Ederlei e sou um desenvolvedor Full Stack!</strong>
+                        Gosto MUITO da área de tecnologia, e tenho certeza que posso contribuir em qualquer time com as
+                        minhas habilidades.
+                    </p>
 
-            <div class="projeto ativo">
-                <a href="https://github.com/EderleiSilva/projeto-fetch-github-api" target="_blank">
-                    <img src="./src/assets/imagens/projetos/projeto-fetch-github-api-main.gif" alt="Gif do Projeto Utilizando API GitHub">
-                    <h3>Fetch com GitHub API</h3>
+                    <p>
+                        Estou sempre me desafiando com novos projetos e participando de comunidades de programação para
+                        buscar feedback de outros desenvolvedores e desenvolvedoras. Além de tentar ajudar essas pessoas
+                        com o que eu já aprendi. 😁
+                    </p>
 
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
+                    <p>
+                        Ah, gosto de jogos, filmes, séries, animes e outras nerdices. 💜
+                    </p>
+
+                    <div class="botoes">
+                        <button class="botao outer-shadow" id="btnDownload">Veja meu CV</button>
                     </div>
-
-
-                </a>
-            </div>
-
-            <div class="projeto ativo">
-                <a href="https://github.com/EderleiSilva/pokedex" target="_blank">
-                    <img src="./src/assets/imagens/projetos/projeto-pokedex.gif" alt="Gif do Projeto pokedex">
-                    <h3>Pokedex</h3>
-
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS, JavaScript e React</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
-        <button class="btn-mostrar-projetos">Mostrar mais</button>
     </section>
+
+    <section class="habilidades section" id="habilidades">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 class="titulo">Habilidades</h2>
+                </div>
+            </div>
+
+            <div class="container-habilidades">
+                <div class="informacoes javascript">
+                    <div class="logo">
+                        <i class="devicon devicon-javascript-plain" id="javascript"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="informacoes html">
+                    <div class="logo">
+                        <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="informacoes css">
+                    <div class="logo">
+                        <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="informacoes github">
+                    <div class="logo">
+                        <i class="devicon devicon-github-original" id="github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                </div>
+
+                <div class="informacoes git">
+                    <div class="logo">
+                        <i class="devicon devicon-git-plain" id="git"></i>
+                    </div>
+                    <h3>Git</h3>
+                </div>
+
+                <div class="informacoes typescript">
+                    <div class="logo">
+                        <i class="devicon devicon-typescript-plain" id="typescript"></i>
+                    </div>
+                    <h3>TypeScript</h3>
+                </div>
+
+                <div class="informacoes nodejs">
+                    <div class="logo">
+                        <i class="devicon devicon-nodejs-plain" id="nodejs"></i>
+                    </div>
+                    <h3>NodeJS</h3>
+                </div>
+
+                <div class="informacoes postgresql">
+                    <div class="logo">
+                        <i class="devicon devicon-postgresql-plain" id="postgresql"></i>
+                    </div>
+                    <h3>PostgreSQL</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificados section" id="certificados">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Meus Certificados</h2>
+                </div>
+            </div>
+
+            <div class="container-certificados">
+                <div class="certificado">
+                    <img src="./src/assets/certificados/Certificado_FrontEnd_DEV_EM_DOBRO.png"
+                        alt="Imagem do meu certificado de frontend">
+                    <h3>Frontend - Dev em Dobro</h3>
+
+                    <div class="informacoes-certificado">
+                        <p>Certificado de conclusão do curso Dev Quest</p>
+                        <p>FRONTEND</p>
+                    </div>
+                </div>
+
+                <div class="certificado">
+                    <img src="./src/assets/certificados/Certificado_BackEnd_DEV_EM_DOBRO.png"
+                        alt="Imagem do meu certificado de frontend">
+                    <h3>Backend - Dev em Dobro</h3>
+
+                    <div class="informacoes-certificado">
+                        <p>Certificado de conclusão do curso Dev Quest</p>
+                        <p>BACKEND</p>
+                    </div>
+                </div>
+
+                <div class="certificado">
+                    <img src="./src/assets/certificados/Certificado_de_participação_IMERSÃO_DEV_COM_GOOGLE_GERMINI.png"
+                        alt="Imagem do meu certificado de frontend">
+                    <h3>Imersão Dev - Alura</h3>
+
+                    <div class="informacoes-certificado">
+                        <p>Certificado de participação da Alura</p>
+                        <p>IMERSÃO DEV Com Google Germini</p>
+                    </div>
+                </div>
+
+                <div class="certificado">
+                    <img src="./src/assets/certificados/Certificado_de_participação_IMERSÃO_DEV_BACK_ALURA.png"
+                        alt="Imagem do meu certificado de frontend">
+                    <h3>Imersão Dev - Alura</h3>
+
+                    <div class="informacoes-certificado">
+                        <p>Certificado de participação da Alura</p>
+                        <p>MERSÃO DEV Backend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos section" id="projetos">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Meus projetos</h2>
+                </div>
+            </div>
+            <div class="container-projetos">
+
+                <div class="projeto">
+                    <a href="https://github.com/EderleiSilva/projeto-grid" target="_blank">
+                        <img src="./src/assets/imagens/projetos/bento-grid-main.gif" alt="Gif do Projeto Grid">
+                        <h3>Bento Grid</h3>
+
+                        <div class="informacoes-projeto">
+                            <p>Projeto feito usando HTML e CSS</p>
+                            <p>🔗 Repositório do GitHub</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <a href="https://github.com/EderleiSilva/gerador-de-conselhos" target="_blank">
+                        <img src="./src/assets/imagens/projetos/gerador-de-conselhos.gif"
+                            alt="Gif do Projeto gerador de conselhos">
+                        <h3>Gerador de Conselhos</h3>
+
+                        <div class="informacoes-projeto">
+                            <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                            <p>🔗 Repositório do GitHub</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <a href="https://github.com/EderleiSilva/projeto-fetch-github-api" target="_blank">
+                        <img src="./src/assets/imagens/projetos/projeto-fetch-github-api-main.gif"
+                            alt="Gif do Projeto Utilizando API GitHub">
+                        <h3>Fetch com GitHub API</h3>
+
+                        <div class="informacoes-projeto">
+                            <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                            <p>🔗 Repositório do GitHub</p>
+                        </div>
+
+
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <a href="https://github.com/EderleiSilva/pokedex" target="_blank">
+                        <img src="./src/assets/imagens/projetos/projeto-pokedex.gif" alt="Gif do Projeto pokedex">
+                        <h3>Pokedex</h3>
+
+                        <div class="informacoes-projeto">
+                            <p>Projeto feito usando HTML, CSS, JavaScript e React</p>
+                            <p>🔗 Repositório do GitHub</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h2>Me envie uma mensagem!</h2>
+            <div class="redes-sociais">
+                <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="./src/js/index.js"></script>
 </body>
