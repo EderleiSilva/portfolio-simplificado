@@ -29,6 +29,7 @@
 .certificados .container-certificados .certificado:hover,
 .certificados .container-certificados .certificado:hover .informacoes-certificado {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .projetos .container-projetos .projeto img,
@@ -59,8 +60,8 @@
     font-size: 1.4rem;
 }
 
-.projetos .container-projetos .projeto h3,
-.certificados .container-certificados .certificado h3 {
+.projetos .container-projetos .projeto .tituloCertificado,
+.certificados .container-certificados .certificado .tituloCertificado {
     font-size: 2rem;
     font-weight: 500;
     position: absolute;
@@ -73,14 +74,15 @@
     bottom: 0;
 }
 
-.certificados .container-certificados .certificado {
-    cursor: pointer;
+.certificado {
+    transition: transform 0.3s ease;
 }
 
 .zoom {
-    transition: transform .2s;
+    z-index: 9999;
+    transform: scale(2.3);
 }
 
-.zoom:hover {
-    transform: scale(2.5);
+.desativado {
+    display: none;
 }
