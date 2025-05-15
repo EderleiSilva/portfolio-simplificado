@@ -22,6 +22,7 @@
     -o-transition: all .3s ease;
     -webkit-transition: all .3s ease;
     position: relative;
+    margin-top: 40px;
 }
 
 .projetos .container-projetos .projeto:hover,

@@ -91,3 +91,7 @@ body {
     background-color: var(--cor-primaria);
     color: var(--cor-branca);
 }
+
+.disable {
+    display: none;
+}
