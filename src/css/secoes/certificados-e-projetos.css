@@ -87,3 +87,17 @@
 .desativado {
     display: none;
 }
+
+@media screen and (max-width: 1200px) {
+    .zoom {
+        z-index: 9999;
+        transform: scale(1.3);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .zoom {
+        z-index: 9999;
+        transform: scale(1);
+    }
+}
